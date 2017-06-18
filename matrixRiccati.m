@@ -2,7 +2,6 @@ function[dPdt] = matrixRiccati(t,A,B,Q,R,N,P,T)
 
 
 P = reshape(P, size(A));
-%P = (P+P')/2; % symmetry preservation (why is this not working here?)
 
 Q11 = reshape(Q(1,1,:),[length(T) 1]);
 Q18 = reshape(Q(1,8,:),[length(T) 1]);
